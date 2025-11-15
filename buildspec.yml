@@ -2,17 +2,16 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      nodejs: 16
     commands:
-      - echo "Instalando dependências agora..."
+      - echo "Instalando dependências..."
       - npm install
+
   build:
     commands:
-      - echo "Gerando build de produção..."
+      - echo "Gerando build da aplicação..."
       - npm run build
 
 artifacts:
-  base-directory: build
   files:
-    - '**/*'
+    - '**/*'        # Envia TUDO para o CodeDeploy (inclui appspec.yml e scripts/)
+  discard-paths: no
