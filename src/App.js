@@ -11,7 +11,7 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="http://comunidadecloud.com"
+          href="https://agner.k8sloss.com.br/"
           target="_blank"
           rel="noopener noreferrer"
         >
