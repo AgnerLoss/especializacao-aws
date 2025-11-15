@@ -6,9 +6,7 @@ phases:
       nodejs: 16
     commands:
       - echo "Instalando dependências..."
-      - npm install
-      # se quiser deixar mais determinístico:
-      # - npm ci
+      - npm ci || npm install
   build:
     commands:
       - echo "Gerando build de produção..."
@@ -16,5 +14,6 @@ phases:
 
 artifacts:
   files:
-    - '**/*'        # Envia tudo (appspec.yml, scripts/, build/, etc.)
-  discard-paths: no
+    - 'build/**/*'
+    - 'appspec.yml'
+    - 'scripts/**/*'

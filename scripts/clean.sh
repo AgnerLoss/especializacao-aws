@@ -1,2 +1,5 @@
 #!/bin/bash
-rm -rf /home/ec2-user/app/*
+set -e
+
+echo "Limpando /var/www/html..."
+rm -rf /var/www/html/*
