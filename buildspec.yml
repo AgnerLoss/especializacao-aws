@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Instalando dependências..."
+      - npm install
+  build:
+    commands:
+      - echo "Gerando build de produção..."
+      - npm run build
+
+artifacts:
+  base-directory: build
+  files:
+    - '**/*'
