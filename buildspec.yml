@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 16
     commands:
-      - echo "Instalando dependências..."
+      - echo "Instalando dependências agora..."
       - npm install
   build:
     commands:
