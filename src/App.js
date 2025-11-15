@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Esse é meu Primeiro App.
+          Projeto Prático para CodePipeline.
         </p>
         <a
           className="App-link"
