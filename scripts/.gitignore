@@ -1,0 +1,23 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build
+dist/
+build/
+.cache/
+
+# VSCode
+.vscode/
+
+# Logs
+logs/
+*.log
+*.out
+*.err
+
+# CodeDeploy/CodeBuild temp
+*.zip
+codedeploy-artifact/
+buildspec-output/
